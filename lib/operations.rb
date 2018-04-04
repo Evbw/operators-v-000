@@ -1,7 +1,7 @@
 def unsafe?(speed)
   if speed > 60
     true
-  elsif speed < 30
+  elsif speed < 40
     true
   else
     false
@@ -9,6 +9,6 @@ def unsafe?(speed)
 end
 
 def not_safe?(speed)
-	speed > 60 || speed < 30 ? true : false
+	speed > 60 || speed < 40 ? true : false
 	binding.pry
 end
